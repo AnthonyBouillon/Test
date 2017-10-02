@@ -1,0 +1,50 @@
+form{
+  margin : 0;
+  width: 80%;
+  padding :1em;
+  border : 1px solid black;
+  border-radius: 1em;
+}
+form, div + div{
+  margin-top: 1em;
+}
+
+label{
+  display :inline-block;
+  width: 5%;
+  text-align: right;
+}
+/* Mettre les zones de texte en noir quand le curseur est positionner dessus*/
+input:focus, textarea:focus{
+  border-color: #000;
+}
+
+input, textarea{
+  /*largeur de la zone de texte*/
+   -moz-box-sizing: border-box;
+  width: 300px;
+  box-sizing: border-box;
+
+}
+
+textarea{
+  /* Permet à l'utilisateur de régler la grandeur de la zone texte du textarea*/
+  resize: vertical, horizontal;
+
+  /* Positionner "message" aligné au bloc*/
+  vertical-align: top;
+
+/* Hauteur de la zone de tete*/
+  height: 10em;
+
+  width: 20%;
+
+}
+
+.button{
+  padding-left: 5%;
+}
+
+button{
+  margin-left: .5em;
+}
